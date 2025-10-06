@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="cookbook">
+    <main class="page">
+        <header class="header">
+            <h1 class="title">The Lazy Gourmet</h1>
+            <p class="subtitle">Easy dishes. Big flavor. Zero stress.</p>
+        </header>
+
+        <form id="recipeForm" class="search">
+            <label for="dish" class="label">Dish Name</label>
+            <div class="search-row">
+                <input type="text" id="dish" class="input" placeholder="e.g. spaghetti" required>
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </form>
+
+        <p id="statusMsg" class="status"></p>
+
+        <article id="info" class="recipe-card" hidden>
+            <div class="recipe-head">
+                <h2 id="recipeName" class="recipe-name"></h2>
+            </div>
+
+            <div class="hero">
+                <figure class="photo-frame">
+                    <img id="photo" src="" alt="" width="200">
+                    <figcaption class="photo-cap">Chef’s view</figcaption>
+                </figure>
+
+                <section class="nutrition">
+                    <h3 class="section-title">Nutrition (per 100g)</h3>
+                    <dl class="nutri-grid">
+                        <div>
+                            <dt>Item</dt>
+                            <dd><span id="nutritionItem"></span></dd>
+                        </div>
+                        <div>
+                            <dt>Calories</dt>
+                            <dd><span id="calories"></span></dd>
+                        </div>
+                        <div>
+                            <dt>Protein</dt>
+                            <dd><span id="protein"></span></dd>
+                        </div>
+                        <div>
+                            <dt>Carbs</dt>
+                            <dd><span id="carbs"></span></dd>
+                        </div>
+                        <div>
+                            <dt>Fat</dt>
+                            <dd><span id="fat"></span></dd>
+                        </div>
+                    </dl>
+                </section>
+            </div>
+
+            <section class="ingredients">
+                <h3 class="section-title">Ingredients</h3>
+                <ul id="ingredients" class="ingredient-list"></ul>
+            </section>
+
+            <section class="instructions">
+                <h3 class="section-title">Method</h3>
+                <ol id="steps" class="step-list"></ol>
+            </section>
+        </article>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
