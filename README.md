@@ -3,7 +3,7 @@
 A chill little app for food lovers who want to **search recipes, see ingredients, and check nutrition facts** without overcomplicating things.  
 Find a dish, follow the steps, and cook it your way — easy, tasty, and stress-free.
 
-[Link to project](replace with your live demo link)
+[Link to project](https://complex-recipe-api.vercel.app/)
 
 ![screenshot](img/cook.png "The Lazy Gourmet — Recipe + Nutrition Finder")
 
